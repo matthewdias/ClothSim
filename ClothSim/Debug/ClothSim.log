@@ -1,14 +1,7 @@
-﻿  ClothSim.cpp
-c:\users\aaron\source\repos\matthewdias\clothsim\clothsim\clothsim.cpp(15): warning C4305: 'initializing': truncation from 'double' to 'float'
-c:\users\aaron\source\repos\matthewdias\clothsim\clothsim\clothsim.cpp(16): warning C4305: 'initializing': truncation from 'double' to 'float'
-c:\users\aaron\source\repos\matthewdias\clothsim\clothsim\clothsim.cpp(94): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
-c:\users\aaron\source\repos\matthewdias\clothsim\clothsim\clothsim.cpp(95): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
-  Particle.cpp
-c:\users\aaron\source\repos\matthewdias\clothsim\clothsim\vmath.h(635): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\aaron\source\repos\matthewdias\clothsim\clothsim\particle.cpp(30): warning C4244: 'argument': conversion from 'double' to 'const T', possible loss of data
-          with
-          [
-              T=float
-          ]
-  Generating Code...
-  ClothSim.vcxproj -> C:\Users\Aaron\source\repos\matthewdias\ClothSim\Debug\ClothSim.exe
+﻿  Cloth.cpp
+c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\vmath.h(635): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\cloth.cpp(191): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\cloth.cpp(192): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\cloth.cpp(193): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\cloth.cpp(194): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  ClothSim.vcxproj -> C:\Users\hatef\source\repos\matthewdias\ClothSim\Debug\ClothSim.exe

@@ -16,12 +16,13 @@ public:
 	Particle();
 	~Particle();
 
-	void addForces(vmath::vec3);
+	void setMass(float);
+	void addForce(vmath::vec3);
 
 	void timeStep(float, float);
 	vmath::vec3& getPos();
 	void offsetPos(const vmath::vec3);
-	void setMoveable(bool);
+	void setMovable(bool);
 	void addToNormal(vmath::vec3);
 	vmath::vec3& getNormal();
 	void resetNormal();

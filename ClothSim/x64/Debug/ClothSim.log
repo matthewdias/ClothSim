@@ -1,5 +1,1 @@
-﻿  pch.cpp
-  ClothSim.cpp
-c:\users\aaron\source\repos\matthewdias\clothsim\clothsim\clothsim.cpp(71): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
-c:\users\aaron\source\repos\matthewdias\clothsim\clothsim\clothsim.cpp(72): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
-  ClothSim.vcxproj -> C:\Users\Aaron\source\repos\matthewdias\ClothSim\x64\Debug\ClothSim.exe
+﻿  ClothSim.vcxproj -> C:\Users\hatef\source\repos\matthewdias\ClothSim\x64\Debug\ClothSim.exe

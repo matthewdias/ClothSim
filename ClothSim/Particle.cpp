@@ -1,7 +1,6 @@
 #include "pch.h"
 #include "Particle.h"
 
-
 Particle::Particle()
 {
 }
@@ -19,15 +18,19 @@ Particle::~Particle()
 {
 }
 
-void Particle::addForces(vmath::vec3 givenForce) {
+void Particle::setMass(float m) {
+	mass = m;
+}
+
+void Particle::addForce(vmath::vec3 givenForce) {
 	a += givenForce / mass;
 }
 
-void Particle::timeStep(float dampening, float timestep) {
+void Particle::timeStep(float dampening, float t) {
 	//Implement verlet
 	if (moveable) {
 		vmath::vec3 temp = pos;
-		pos = pos + (pos - prevPos) * (1.0 - dampening) + a*(timestep*timestep);
+		pos = pos + (pos - prevPos) * (1.0 - dampening) + a*(t*t);
 		prevPos = temp;
 		a = vmath::vec3(0,0,0);
 	}
@@ -43,7 +46,7 @@ void Particle::offsetPos(const vmath::vec3 vec) {
 	}
 }
 
-void Particle::setMoveable(bool mov) {
+void Particle::setMovable(bool mov) {
 	moveable = mov;
 }
 
