@@ -6,12 +6,13 @@ class Particle
 private:
 	bool moveable;
 	float mass;
-	vmath::vec3 pos;
-	vmath::vec3 prevPos;
 	vmath::vec3 a;
 	vmath::vec3 accumulatedNormal;
 
 public:
+	vmath::vec3 pos;
+	vmath::vec3 prevPos;
+
 	Particle(vmath::vec3, float);
 	Particle();
 	~Particle();

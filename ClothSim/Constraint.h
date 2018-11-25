@@ -5,6 +5,7 @@ class Constraint
 {
 public:
     Particle *p1, *p2;
+	float restDistance;
 
     Constraint();
 	Constraint(Particle*, Particle*);
@@ -12,6 +13,5 @@ public:
     void satisfyConstraint();
     
 private:
-    float restDistance;
 
 };
