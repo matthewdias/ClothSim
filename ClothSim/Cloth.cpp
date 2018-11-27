@@ -138,8 +138,6 @@ void Cloth::drawShaded() {
 			float endX = (x + 1) / numClothColumns;
 			float startY = 1 - (y / numClothRows);
 			float endY = 1 - ((y + 1) / numClothRows);
-
-			//printf("%4.2f | %4.2f | %4.2f | %4.2f\n", startX, endX, startY, endY);
 			
 			drawTriangle(
 				getParticle(x + 1, y),
