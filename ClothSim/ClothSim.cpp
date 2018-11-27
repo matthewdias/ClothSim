@@ -276,7 +276,7 @@ int main(int argc, char *argv[])
 	TwDefine(" TweakBar size='200 400' color='0 0 0' "); // change default tweak bar size and color
 
 	TwAddVarRW(bar, "Scene", TW_TYPE_INT16, &g_scene,
-		" min=1 max=3 step=1 keyIncr=z keyDecr=Z help='Change what cloth demo is currently running.' ");
+		" min=1 max=2 step=1 keyIncr=z keyDecr=Z help='Change what cloth demo is currently running.' ");
 
 	TwAddVarRW(bar, "Gravity", TW_TYPE_FLOAT, &g_gravityScale,
 		" min=0.0 max=2.0 step=0.1 keyIncr=a keyDecr=A help='Change what cloth demo is currently running.' ");
