@@ -10,38 +10,52 @@ Cloth::~Cloth()
 {
 }
 
-Cloth::Cloth(float clothWidth, float clothHeight, float particleMass, int columns, int rows, float iterations, float damp, float t, vmath::vec3 givenPos, bool vert) {
-	numClothColumns = columns;
-	numClothRows = rows;
-    constraintIterations = iterations;
-    dampening = damp;
-    timeUnit = t;    
-
-    particles.resize(numClothColumns * numClothRows);
-
-    // Creating particles in a grid of particles from givenPos to givenPos + (width,-height,0)
+void Cloth::setPosition(vmath::vec3 givenPos, bool vert) {
+	// Creating particles in a grid of particles from givenPos to givenPos + (width,-height,0)
 	// we are translating each particle's grid position in the cloth to it's actual vector position in the coordinate plane.
 	for (int x = 0; x < numClothColumns; x++) {
 		for (int y = 0; y < numClothRows; y++) {
 			vmath::vec3 pos;
 			if (!vert) {
 				pos = vmath::vec3(
-					clothWidth * (x / (float)numClothColumns),
+					width * (x / (float)numClothColumns),
 					0,
-					-clothHeight * (y / (float)numClothRows)
+					-height * (y / (float)numClothRows)
 				);
-			} else {
+			}
+			else {
 				pos = vmath::vec3(
-					clothWidth * (x / (float)numClothColumns),
-					-clothHeight * (y / (float)numClothRows),
+					width * (x / (float)numClothColumns),
+					-height * (y / (float)numClothRows),
 					0
-					
 				);
 			}
 			pos = givenPos + pos;
-			particles[(y * numClothColumns) + x] = Particle(pos, particleMass);
+			getParticle(x,y)->setPos(pos);
 		}
 	}
+}
+
+Cloth::Cloth(float clothWidth, float clothHeight, float particleMass, int columns, int rows, float iterations, float damp, float t, vmath::vec3 givenPos, bool vert) {
+	numClothColumns = columns;
+	numClothRows = rows;
+    constraintIterations = iterations;
+    dampening = damp;
+    timeUnit = t;
+	width = clothWidth;
+	height = clothHeight;
+
+    particles.resize(numClothColumns * numClothRows);
+
+	//Create our particles
+	for (int x = 0; x < numClothColumns; x++) {
+		for (int y = 0; y < numClothRows; y++) {
+			particles[(y * numClothColumns) + x] = Particle(vmath::vec3(0,0,0), particleMass);
+		}
+	}
+	//Set particle positions
+	setPosition(givenPos, vert);
+
 
 	for (int x = 0; x < numClothColumns; x++) {
 		for (int y = 0; y < numClothRows; y++) {
@@ -228,6 +242,11 @@ void Cloth::setMass(float mass) {
 			particles[(y * numClothColumns) + x].setMass(mass);
 		}
 	}
+}
+
+float Cloth::getMass() {
+	//Our particles should all have the same mass, so it doesn't matter which one we get.
+	return particles[0].getMass();
 }
 
 /*

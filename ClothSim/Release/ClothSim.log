@@ -1,15 +1,20 @@
-﻿  Cloth.cpp
-c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\vmath.h(635): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\cloth.cpp(131): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\cloth.cpp(132): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\cloth.cpp(133): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\cloth.cpp(140): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\cloth.cpp(141): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\cloth.cpp(142): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\cloth.cpp(265): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+﻿  ClothSim.cpp
+c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\clothsim.cpp(18): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\clothsim.cpp(72): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\clothsim.cpp(72): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\clothsim.cpp(230): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\clothsim.cpp(231): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
   Generating code
-  9 of 295 functions ( 3.1%) were compiled, the rest were copied from previous compilation.
+  5 of 255 functions ( 2.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    10 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   ClothSim.vcxproj -> C:\Users\hatef\source\repos\matthewdias\ClothSim\Release\ClothSim.exe

@@ -18,8 +18,9 @@ public:
 	~Particle();
 
 	void setMass(float);
+	float getMass();
 	void addForce(vmath::vec3);
-
+	void setPos(vmath::vec3);
 	void timeStep(float, float);
 	vmath::vec3& getPos();
 	void offsetPos(const vmath::vec3);

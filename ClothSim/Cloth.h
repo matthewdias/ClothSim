@@ -21,6 +21,8 @@ public:
 	void planeCollision(const float);
 	void setMass(float mass);
 	Particle* getParticle(int, int);
+	void setPosition(vmath::vec3, bool);
+	float getMass();
 
 private:
 	int numClothColumns;
@@ -28,6 +30,8 @@ private:
 	float constraintIterations;
 	float dampening;
 	float timeUnit;
+	float width;
+	float height;
 
 	//2D vector for all of our particles
 	std::vector<Particle> particles;

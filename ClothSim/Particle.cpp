@@ -22,6 +22,10 @@ void Particle::setMass(float m) {
 	mass = m;
 }
 
+float Particle::getMass() {
+	return mass;
+}
+
 void Particle::addForce(vmath::vec3 givenForce) {
 	a += givenForce / mass;
 }
@@ -34,6 +38,11 @@ void Particle::timeStep(float dampening, float t) {
 		prevPos = temp;
 		a = vmath::vec3(0,0,0);
 	}
+}
+
+void Particle::setPos(vmath::vec3 givenPos) {
+	pos = givenPos;
+	prevPos = givenPos;
 }
 
 vmath::vec3& Particle::getPos() {

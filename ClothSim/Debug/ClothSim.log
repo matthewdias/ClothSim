@@ -1,9 +1,1 @@
-﻿  Cloth.cpp
-c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\vmath.h(635): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\cloth.cpp(197): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\cloth.cpp(198): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\cloth.cpp(199): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\cloth.cpp(205): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\cloth.cpp(206): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-c:\users\hatef\source\repos\matthewdias\clothsim\clothsim\cloth.cpp(207): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  ClothSim.vcxproj -> C:\Users\hatef\source\repos\matthewdias\ClothSim\Debug\ClothSim.exe
+﻿
