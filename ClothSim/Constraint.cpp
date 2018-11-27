@@ -33,18 +33,7 @@ void Constraint::satisfyConstraint() {
     float springDamp = -0.5f * (v1 - v2);
     float totalSpringForce = springForce + springDamp;
     vmath::vec3 f1 = totalSpringForce * normalDifferenceVec;
-
-    // // Ks is the stiffness of the spring, when k gets bigger, the spring wants keep it's length
-    // vmath::vec3 springForce = -0.04f * (restDistance - currDistance) * (differenceVec / currDistance);
-    // vmath::vec3 springDamp = -0.01f * ((p1->pos - p1->prevPos) - (p2->pos - p2->prevPos));
-    // vmath::vec3 totalSpringForce = springForce + springDamp;
     
     p1->addForce(-f1);
-    p2->addForce(f1);
-/*
-    vmath::vec3 correctionVec = differenceVec * (1 - restDistance/currDistance);
-    vmath::vec3 correctionVecHalf = correctionVec * 0.5;
-    p1->offsetPos(correctionVecHalf);
-    p2->offsetPos(-correctionVecHalf);   
-*/     
+    p2->addForce(f1);  
 } 
